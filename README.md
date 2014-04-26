@@ -6,7 +6,7 @@ Coursera Getting and Cleaning Data Group Project
 =================================================
 Notes on Reproducing the Analyses in this project
 =================================================
-Cleaning the accelerometer data in this repo requires a single R script, "run_analysis.R" which can be found in this repo. A few additional (manual) manipulations are required; these can be found in "CodeBook.md"which is contained in this repo. R version 2.15.3 was used for all analyses.
+Cleaning the accelerometer data in this repo requires a single R script, "run_analysis.R". A few additional (manual) manipulations are required; these can be found in "CodeBook.md". R version 2.15.3 was used for all analyses. All required files (save for the original data, see below) can be found in this repo.
 
 Instructions for running the "run_analysis.R" script can be found in "CodeBook.md".
 
