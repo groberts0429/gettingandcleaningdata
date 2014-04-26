@@ -26,23 +26,23 @@ I interpreted "mean and standard deviation" as referring to the accelerometer da
 Instruction List
 ================
 
- a) For consistency, R 2.15.3 is recommended though later R versions may work. 
-    i)  Specifically, package "reshape2" will produce a warning message when installed under R version 3.0.3
-    ii) All work was done in R GUI although the author has no reason to believe that other systems (e.g. RS tudio) would not work.
- b) Ensure that that the following package has been installed: reshape2.
- c) Download data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip into a folder named "UCI HAR Dataset"
- d) Set the working directory to "UCI HAR Dataset" (e.g. "C:\UCI HAR Dataset" or whatever fully-qualified path gets you to inside the "UCI HAR Dataset" directory).
-    i) Caution is required as certain unzip tools may nest the "UCI HAR Dataset" directory within a directory which is itself named "UCI HAR Dataset". If this occurrs, you must set the working directory to the innermost directory with the specified title. You will know that you are in the correct directory when you see two subdirectories named "test" and "train"
- e) Run "run_analysis.R". This may be accomplished by either of the following steps:
-   i)  Copy the R code from "run_analysis.R" in the repo directly into R GUI.
-   ii) Download "run_analysis.R" into the "UCI HAR Dataset" directory.
+* For consistency, R 2.15.3 is recommended though later R versions may work. 
+    *  Specifically, package "reshape2" will produce a warning message when installed under R version 3.0.3
+    * All work was done in R GUI although the author has no reason to believe that other systems (e.g. RS tudio) would not work.
+*  Ensure that that the following package has been installed: reshape2.
+*  Download data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip into a folder named "UCI HAR Dataset"
+*  Set the working directory to "UCI HAR Dataset" (e.g. "C:\UCI HAR Dataset" or whatever fully-qualified path gets you to inside the "UCI HAR Dataset" directory).
+    *  Caution is required as certain unzip tools may nest the "UCI HAR Dataset" directory within a directory which is itself named "UCI HAR Dataset". If this occurrs, you must set the working directory to the innermost directory with the specified title. You will know that you are in the correct directory when you see two subdirectories named "test" and "train"
+*  Run "run_analysis.R". This may be accomplished by either of the following steps:
+   *   Copy the R code from "run_analysis.R" in the repo directly into R GUI.
+   *  Download "run_analysis.R" into the "UCI HAR Dataset" directory.
 
 ==========================
 Notes on the Tidy Data Set
 ==========================
-a) After running the script you will find the "tidyUCF.csv" file in the "UCI HAR Dataset" directory.
-b) Open "tidyUCF.csv" in Excel. The data should import automatically.
-   i)  If for any reason the data does not import properly, use the text import wizard and select "comma" as the delimiter.
-   ii) Alternatively, you may open the "tidyUCFcsv.txt" file in Excel. Highlight the first column. Select "Text Import Wizard" tool. Select "comma" as delimiter. Press "Finish".
-c) You should now have a tidy data set with each variable in a separate column and each observation in a separate row.
-d) You may remove the first column which contains the row numbers. This will not affect the integrity of the data and is suggested purely for esthetic reasons.
+*  After running the script you will find the "tidyUCF.csv" file in the "UCI HAR Dataset" directory.
+*  Open "tidyUCF.csv" in Excel. The data should import automatically.
+   *   If for any reason the data does not import properly, use the text import wizard and select "comma" as the delimiter.
+   *  Alternatively, you may open the "tidyUCFcsv.txt" file in Excel. Highlight the first column. Select "Text Import Wizard" tool. Select "comma" as delimiter. Press "Finish".
+* You should now have a tidy data set with each variable in a separate column and each observation in a separate row.
+* You may remove the first column which contains the row numbers. This will not affect the integrity of the data and is suggested purely for esthetic reasons.
